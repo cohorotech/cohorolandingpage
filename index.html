@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cohoro | One AI-Powered Partner for Business Solutions</title>
+  <meta name="description" content="Cohoro combines AI-powered intelligence with human expertise across talent, learning, events, gifting, and office solutions.">
+  
+  <!-- Inter & Playfair Display Fonts from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       SITE HEADER & NAVBAR
+       ========================================== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo" id="logoBtn">
+          Cohoro
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+          
+          <!-- Services Nav Link with Hover Dropdown -->
+          <li class="nav-dropdown-wrapper">
+            <a href="#" class="nav-link" data-page="services" id="servicesNavLink">
+              Services <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            
+            <!-- Hover Dropdown Menu -->
+            <div class="nav-dropdown-menu">
+              <div class="dropdown-column">
+                <a href="#" class="dropdown-item" data-vertical="talent">
+                  <div class="dropdown-item-title">Cohoro Talent</div>
+                  <div class="dropdown-item-desc">Strategic recruitment & executive search</div>
+                </a>
+                <a href="#" class="dropdown-item" data-vertical="learning">
+                  <div class="dropdown-item-title">Cohoro Learning</div>
+                  <div class="dropdown-item-desc">Corporate & compliance training that sticks</div>
+                </a>
+                <a href="#" class="dropdown-item" data-vertical="events">
+                  <div class="dropdown-item-title">Cohoro Events</div>
+                  <div class="dropdown-item-desc">End-to-end corporate event planning</div>
+                </a>
+              </div>
+              <div class="dropdown-column">
+                <a href="#" class="dropdown-item" data-vertical="gifting">
+                  <div class="dropdown-item-title">Cohoro Gifting</div>
+                  <div class="dropdown-item-desc">Bespoke corporate gifting that leaves an impression</div>
+                </a>
+                <a href="#" class="dropdown-item" data-vertical="solutions">
+                  <div class="dropdown-item-title">Cohoro Solutions</div>
+                  <div class="dropdown-item-desc">Office supplies & IT hardware procurement</div>
+                </a>
+                <a href="#" class="dropdown-item" data-page="services" style="margin-top: 4px;">
+                  <div class="dropdown-item-title" style="color: var(--primary-brand);">
+                    View All Services <i class="fas fa-arrow-right" style="font-size: 0.8rem;"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="#" class="nav-link" data-page="about">About Us</a></li>
+          <li><a href="#" class="nav-link" data-page="contact">Contact Us</a></li>
+        </ul>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <nav class="mobile-nav-drawer" id="mobileNavDrawer">
+    <a href="#" class="mobile-nav-item" data-page="home">Home</a>
+    <a href="#" class="mobile-nav-item" data-page="services">Services Overview</a>
+    <div style="height: 1px; background: var(--border-light); margin: 4px 0;"></div>
+    <a href="#" class="mobile-nav-subitem" data-vertical="talent">Cohoro Talent</a>
+    <a href="#" class="mobile-nav-subitem" data-vertical="learning">Cohoro Learning</a>
+    <a href="#" class="mobile-nav-subitem" data-vertical="events">Cohoro Events</a>
+    <a href="#" class="mobile-nav-subitem" data-vertical="gifting">Cohoro Gifting</a>
+    <a href="#" class="mobile-nav-subitem" data-vertical="solutions">Cohoro Solutions</a>
+    <div style="height: 1px; background: var(--border-light); margin: 4px 0;"></div>
+    <a href="#" class="mobile-nav-item" data-page="about">About Us</a>
+    <a href="#" class="mobile-nav-item" data-page="contact">Contact Us</a>
+    <div class="mobile-nav-bottom-cta">
+      <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-primary-dark mobile-nav-btn">
+        Talk to Us <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       1. HOME / LANDING PAGE VIEW
+       ========================================== -->
+  <main id="homeView" class="page-view active">
+    <!-- Hero Banner Card Container -->
+    <section class="hero-card-section">
+      <div class="container">
+        <div class="hero-card-banner">
+          <div class="hero-card-content">
+            <h1 class="hero-card-title">One AI-Powered Partner.<br>Five Smarter Business Solutions.</h1>
+            <p class="hero-card-subtitle">
+              Cohoro combines AI-powered intelligence with human expertise across talent, learning, events, gifting, and office solutions — delivering faster, smarter, and more precise outcomes.
+            </p>
+            <div class="hero-card-actions">
+              <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-primary-white">
+                Talk to Us <i class="fab fa-whatsapp"></i>
+              </a>
+              <button class="btn-outline-glass" data-page="services">
+                Explore Services
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Moving Stripe of Text (Placed ABOVE the Intro Text Section)
+         Meta Blue text (#0064E0), Large Playfair Display font (Normal weight, NOT italic), No borders above/below, Equal 80px gap between ALL items -->
+    <section class="ticker-stripe-section">
+      <div class="ticker-track">
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="talent">Talent</span>
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="learning">Learning</span>
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="events">Events</span>
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="gifting">Gifting</span>
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="solutions">Solutions</span>
+
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="talent">Talent</span>
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="learning">Learning</span>
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="events">Events</span>
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="gifting">Gifting</span>
+        <span class="ticker-item" data-vertical="home">Cohoro</span>
+        <span class="ticker-item" data-vertical="solutions">Solutions</span>
+      </div>
+    </section>
+
+    <!-- Intro Text Below Ticker Banner -->
+    <section class="landing-intro-section">
+      <div class="container">
+        <p class="landing-intro-text">
+          Cohoro is a multi-vertical business solutions firm built for companies that want fewer vendors and more accountability. Whether you're hiring your next team member, training your workforce, planning a corporate event, gifting your clients, or stocking your office — Cohoro delivers it with the same standard of reliability across every vertical.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5 Vertical Services Cards Grid -->
+    <section class="services-section">
+      <div class="container">
+        <div class="verticals-grid">
+          <!-- Talent Card -->
+          <div class="service-card" data-vertical="talent">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-user-group"></i></div>
+              <h3 class="service-card-title">Talent</h3>
+              <p class="service-card-desc">Finding the right people, faster.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+
+          <!-- Learning Card -->
+          <div class="service-card" data-vertical="learning">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h3 class="service-card-title">Learning</h3>
+              <p class="service-card-desc">Corporate & compliance training that sticks.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+
+          <!-- Events Card -->
+          <div class="service-card" data-vertical="events">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-calendar-alt"></i></div>
+              <h3 class="service-card-title">Events</h3>
+              <p class="service-card-desc">Corporate events, planned end to end.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <div class="verticals-grid-bottom">
+          <!-- Gifting Card -->
+          <div class="service-card" data-vertical="gifting">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-gift"></i></div>
+              <h3 class="service-card-title">Gifting</h3>
+              <p class="service-card-desc">Corporate gifting that leaves an impression.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+
+          <!-- Solutions Card -->
+          <div class="service-card" data-vertical="solutions">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-briefcase"></i></div>
+              <h3 class="service-card-title">Solutions</h3>
+              <p class="service-card-desc">Office supplies & IT, sorted.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Advantage Banner -->
+    <section class="ai-banner">
+      <div class="container">
+        <h2 class="ai-banner-text">
+          Every Cohoro service combines Artificial Intelligence with human expertise to improve efficiency, accuracy, personalization, and business outcomes.
+        </h2>
+      </div>
+    </section>
+
+    <!-- Why Cohoro Feature Grid -->
+    <section class="features-section">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-th-large"></i></div>
+            <p class="feature-text">One partner across talent, learning, events, gifting, and office needs — less vendor management for you.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+            <p class="feature-text">Every vertical is run with the same standard: clear process, clear pricing, no surprises.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+            <p class="feature-text">Built by people who understand corporate buying — HR, admin, and procurement all speak the same language with us.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+            <p class="feature-text">Scalable — start with one vertical, add more as your needs grow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dark CTA Banner -->
+    <section class="dark-cta-banner">
+      <div class="container">
+        <h2 class="dark-cta-title">Let's simplify how you work with vendors.</h2>
+        <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-cta-white">
+          Get in Touch <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       2. SERVICES OVERVIEW VIEW
+       ========================================== -->
+  <main id="servicesView" class="page-view">
+    <div class="container">
+      <section class="service-hero-header hero-services">
+        <div class="service-hero-content">
+          <span class="service-tag">Cohoro Services</span>
+          <h1 class="service-headline">Integrated Solutions for Modern Enterprises.</h1>
+          <p class="service-subtext">
+            Cohoro provides a comprehensive suite of B2B services designed to optimize your workplace, empower your people, and elevate your brand.
+          </p>
+        </div>
+      </section>
+
+      <section class="services-section">
+        <div class="verticals-grid">
+          <div class="service-card" data-vertical="talent">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-user-group"></i></div>
+              <h3 class="service-card-title">Cohoro Talent</h3>
+              <p class="service-card-desc">Strategic recruitment and executive search for high-growth teams.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+
+          <div class="service-card" data-vertical="learning">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-graduation-cap"></i></div>
+              <h3 class="service-card-title">Cohoro Learning</h3>
+              <p class="service-card-desc">Corporate training and compliance programs that drive performance.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+
+          <div class="service-card" data-vertical="events">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-calendar-alt"></i></div>
+              <h3 class="service-card-title">Cohoro Events</h3>
+              <p class="service-card-desc">End-to-end event planning for offsites, town halls, and launches.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+
+        <div class="verticals-grid-bottom">
+          <div class="service-card" data-vertical="gifting">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-gift"></i></div>
+              <h3 class="service-card-title">Cohoro Gifting</h3>
+              <p class="service-card-desc">Bespoke corporate gifting that leaves a lasting impression.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+
+          <div class="service-card" data-vertical="solutions">
+            <div>
+              <div class="service-card-icon"><i class="fas fa-briefcase"></i></div>
+              <h3 class="service-card-title">Cohoro Solutions</h3>
+              <p class="service-card-desc">Streamlined office supplies and IT hardware procurement.</p>
+            </div>
+            <div class="service-card-link">Explore Service <i class="fas fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       3. TALENT DETAIL VIEW
+       ========================================== -->
+  <main id="talentView" class="page-view">
+    <div class="container">
+      <section class="service-hero-header hero-talent">
+        <div class="service-hero-content">
+          <span class="service-tag">Cohoro Talent</span>
+          <h1 class="service-headline">Finding the Right People, Faster.</h1>
+          <p class="service-subtext">
+            Cohoro Talent helps companies hire with speed and precision — from single critical roles to building out entire teams. We work as an extension of your HR function, not just a resume-sourcing vendor.
+          </p>
+          <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-primary-white">
+            Talk to Us <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+
+
+
+      <section class="offer-section">
+        <div class="offer-layout">
+          <div>
+            <h2 class="offer-title">What We Offer</h2>
+            <div class="offer-grid-2">
+              <div class="offer-card">
+                <div class="offer-icon"><i class="fas fa-user-check"></i></div>
+                <h3 class="offer-card-title">End-to-End Recruitment</h3>
+                <p class="offer-card-desc">Comprehensive sourcing, screening, and shortlisting tailored to your specifications.</p>
+              </div>
+              <div class="offer-card">
+                <div class="offer-icon"><i class="fas fa-users"></i></div>
+                <h3 class="offer-card-title">Bulk Hiring</h3>
+                <p class="offer-card-desc">Efficient ramp-up for entire teams when you need scale fast.</p>
+              </div>
+              <div class="offer-card full-width">
+                <div class="offer-icon"><i class="fas fa-award"></i></div>
+                <h3 class="offer-card-title">Leadership & Niche Search</h3>
+                <p class="offer-card-desc">Targeted executive search and specialized headhunting for hard-to-fill positions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="side-cards">
+            <div class="why-us-card">
+              <h3 class="why-us-header">Why Companies Choose Us</h3>
+              <div class="why-us-list">
+                <div class="why-us-item">
+                  <i class="fas fa-bolt why-us-icon"></i>
+                  <div>
+                    <div class="why-us-title">Fast & Transparent</div>
+                    <div class="why-us-desc">Direct access to dedicated recruiters without agency bloat.</div>
+                  </div>
+                </div>
+                <div class="why-us-item">
+                  <i class="fas fa-headset why-us-icon"></i>
+                  <div>
+                    <div class="why-us-title">Dedicated Contact</div>
+                    <div class="why-us-desc">Single point of contact for clear updates.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Candidate Talent Pool Card (Inverted Theme) -->
+            <div class="talent-pool-card">
+              <span class="talent-pool-tag">FOR CANDIDATES</span>
+              <h3 class="talent-pool-title">Want to join our talent pool?</h3>
+              <p class="talent-pool-desc">
+                Share your resume with Cohoro Talent to get matched with top opportunities and hiring drives across leading companies.
+              </p>
+              <a href="https://forms.gle/zsgcjTiccgGwzCuJ7" target="_blank" rel="noopener noreferrer" class="btn-talent-pool">
+                Submit Your Resume <i class="fas fa-paper-plane"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Deep Blue Central Cross-Sell Card at Bottom of Page -->
+      <section style="margin: 48px 0 24px;">
+        <div class="synergy-card" data-vertical="learning">
+          <div>            <div class="synergy-title">Onboarding new hires?</div>
+            <div class="synergy-desc">Cohoro Learning can help you train them from day one.</div>
+          </div>
+          <div class="synergy-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       4. LEARNING DETAIL VIEW
+       ========================================== -->
+  <main id="learningView" class="page-view">
+    <div class="container">
+      <section class="service-hero-header hero-learning">
+        <div class="service-hero-content">
+          <span class="service-tag">Cohoro Learning</span>
+          <h1 class="service-headline">Corporate & Compliance Training That Sticks.</h1>
+          <p class="service-subtext">
+            Cohoro Learning designs and delivers training programs that go beyond a checklist — built for retention, not just attendance. From compliance mandates to skill-building, we handle the design, delivery, and reporting.
+          </p>
+          <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-primary-white">
+            Talk to Us <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+
+
+
+      <section class="offer-section">
+        <h2 class="offer-title">What We Offer</h2>
+        <div class="offer-grid-3" style="margin-top: 24px;">
+          <div class="offer-card">
+            <div class="offer-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3 class="offer-card-title">Compliance Training</h3>
+            <p class="offer-card-desc">OSHA, workplace safety, and anti-bias mandates beyond tick-boxes designed for true understanding and adherence.</p>
+          </div>
+          <div class="offer-card">
+            <div class="offer-icon"><i class="fas fa-chart-line"></i></div>
+            <h3 class="offer-card-title">Skills-Building</h3>
+            <p class="offer-card-desc">Comprehensive leadership development programs and professional skill-building workshops for your evolving workforce.</p>
+          </div>
+          <div class="offer-card">
+            <div class="offer-icon"><i class="fas fa-drafting-compass"></i></div>
+            <h3 class="offer-card-title">Custom Design</h3>
+            <p class="offer-card-desc">Tailored learning paths created specifically for your unique team, function, or operational challenges.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="process-header">
+          <h2 class="process-title">Our Methodology</h2>
+        </div>
+        <div class="process-pipeline">
+          <div class="process-step">
+            <div class="process-node-num">1</div>
+            <div class="process-step-name">Needs Analysis</div>
+            <div class="process-step-desc">Identifying specific skill gaps, compliance mandates, and organizational goals.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-node-num">2</div>
+            <div class="process-step-name">Curriculum Design</div>
+            <div class="process-step-desc">Developing engaging, interactive content built around retention and real-world application.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-node-num">3</div>
+            <div class="process-step-name">Omnichannel Delivery</div>
+            <div class="process-step-desc">Executing training via in-person workshops, virtual sessions, or blended learning.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-node-num">4</div>
+            <div class="process-step-name">Impact Assessment</div>
+            <div class="process-step-desc">Measuring knowledge retention, behavioral changes, and providing audit-ready reporting.</div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section style="margin: 48px 0 24px;">
+        <div class="synergy-card" data-vertical="events">
+          <div>            <div class="synergy-title">Planning a training rollout?</div>
+            <div class="synergy-desc">Cohoro Events can handle the logistics if it's off-site.</div>
+          </div>
+          <div class="synergy-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       4B. EVENTS DETAIL VIEW
+       ========================================== -->
+  <main id="eventsView" class="page-view">
+    <div class="container">
+      <section class="service-hero-header hero-events">
+        <div class="service-hero-content">
+          <span class="service-tag">Cohoro Events</span>
+          <h1 class="service-headline">Seamless Corporate Event Execution.</h1>
+          <p class="service-subtext">
+            Cohoro Events plans, produces, and executes seamless corporate gatherings, conferences, off-sites, and brand activations — handling venue sourcing, logistics, and production.
+          </p>
+          <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-primary-white">
+            Talk to Us <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+
+
+
+      <section class="offer-section">
+        <h2 class="offer-title">What We Offer</h2>
+        <div class="offer-grid-3" style="margin-top: 24px;">
+          <div class="offer-card">
+            <div class="offer-icon"><i class="fas fa-calendar-alt"></i></div>
+            <h3 class="offer-card-title">Conferences & Summits</h3>
+            <p class="offer-card-desc">End-to-end management for corporate summits, stage design, AV equipment, and guest coordination.</p>
+          </div>
+          <div class="offer-card">
+            <div class="offer-icon"><i class="fas fa-umbrella-beach"></i></div>
+            <h3 class="offer-card-title">Corporate Off-Sites</h3>
+            <p class="offer-card-desc">Bespoke retreat planning, travel logistics, team-building exercises, and venue selection.</p>
+          </div>
+          <div class="offer-card">
+            <div class="offer-icon"><i class="fas fa-bullhorn"></i></div>
+            <h3 class="offer-card-title">Brand Activations</h3>
+            <p class="offer-card-desc">Immersive product launches and experiential marketing setups that leave lasting impressions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin: 48px 0 24px;">
+        <div class="synergy-card" data-vertical="gifting">
+          <div>            <div class="synergy-title">Need branded gifts for your event attendees?</div>
+            <div class="synergy-desc">Cohoro Gifting can help.</div>
+          </div>
+          <div class="synergy-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       5. GIFTING DETAIL VIEW
+       ========================================== -->
+  <main id="giftingView" class="page-view">
+    <div class="container">
+      <section class="service-hero-header hero-gifting">
+        <div class="service-hero-content">
+          <span class="service-tag">Cohoro Gifting</span>
+          <h1 class="service-headline">Corporate Gifting That Leaves an Impression.</h1>
+          <p class="service-subtext">
+            Cohoro Gifting curates and delivers corporate gifts that feel considered, not generic — for clients, employees, and milestones that matter. We handle sourcing, customization, and delivery at any scale.
+          </p>
+          <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-primary-white">
+            Talk to Us <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+
+
+
+      <section class="process-section" style="background: transparent; border: none;">
+        <div class="process-header">
+          <h2 class="process-title">The Gifting Journey</h2>
+        </div>
+        <div class="process-pipeline">
+          <div class="process-step">
+            <div class="journey-number">01</div>
+            <div class="process-step-name">Discovery & Strategy</div>
+            <div class="process-step-desc">Understanding your brand, audience, and objectives to shape the perfect gifting strategy.</div>
+          </div>
+          <div class="process-step">
+            <div class="journey-number">02</div>
+            <div class="process-step-name">Bespoke Selection</div>
+            <div class="process-step-desc">Curating a tailored selection of premium items that align with your unique requirements.</div>
+          </div>
+          <div class="process-step">
+            <div class="journey-number">03</div>
+            <div class="process-step-name">Custom Branding</div>
+            <div class="process-step-desc">Applying elegant, high-quality branding to ensure your gifts reflect your corporate identity.</div>
+          </div>
+          <div class="process-step">
+            <div class="journey-number">04</div>
+            <div class="process-step-name">Seamless Logistics</div>
+            <div class="process-step-desc">Managing the entire fulfillment process, from secure packaging to reliable global delivery.</div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section style="margin: 48px 0 24px;">
+        <div class="synergy-card" data-vertical="talent">
+          <div>            <div class="synergy-title">Hiring new team members?</div>
+            <div class="synergy-desc">Pair Cohoro Talent with a welcome kit from us.</div>
+          </div>
+          <div class="synergy-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       6. SOLUTIONS DETAIL VIEW
+       ========================================== -->
+  <main id="solutionsView" class="page-view">
+    <div class="container">
+      <section class="service-hero-header hero-solutions">
+        <div class="service-hero-content">
+          <span class="service-tag">Cohoro Solutions</span>
+          <h1 class="service-headline">Office Supplies & IT, Sorted.</h1>
+          <p class="service-subtext">
+            Cohoro Solutions keeps your office running — from everyday supplies to IT hardware and setup. One reliable vendor for the things your office can't function without.
+          </p>
+          <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-primary-white">
+            Talk to Us <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="offer-section">
+        <div class="section-header">
+          <h2 class="section-title">Our Supplies</h2>
+          <p class="section-subtitle">A comprehensive catalog tailored to meet the diverse needs of modern workplaces.</p>
+        </div>
+        <div class="supplies-grid">
+          <div class="supply-card">
+            <div class="supply-icon"><i class="fas fa-pencil-alt"></i></div>
+            <h3 class="supply-title">Stationery & Paper</h3>
+            <p class="supply-desc">Notebooks, pens, premium paper, desk organizers, and essential writing tools.</p>
+          </div>
+          <div class="supply-card">
+            <div class="supply-icon"><i class="fas fa-laptop"></i></div>
+            <h3 class="supply-title">Technology & Hardware</h3>
+            <p class="supply-desc">Laptops, monitors, ergonomic peripherals, networking gear, and presentation equipment.</p>
+          </div>
+          <div class="supply-card">
+            <div class="supply-icon"><i class="fas fa-coffee"></i></div>
+            <h3 class="supply-title">Pantry & Breakroom</h3>
+            <p class="supply-desc">Premium coffee, snacks, ergonomic seating, appliances, and breakroom essentials.</p>
+          </div>
+          <div class="supply-card">
+            <div class="supply-icon"><i class="fas fa-pump-medical"></i></div>
+            <h3 class="supply-title">Hygiene & Safety</h3>
+            <p class="supply-desc">First-aid kits, sanitation supplies, safety signage, and protective equipment.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="process-header">
+          <h2 class="process-title">Our Approach</h2>
+        </div>
+        <div class="process-pipeline" style="grid-template-columns: repeat(3, 1fr);">
+          <div class="process-step">
+            <div class="process-node-num">01</div>
+            <div class="process-step-name">Inventory Audit</div>
+            <div class="process-step-desc">Assessing your current needs, usage rates, and identifying critical gaps in your supply chain.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-node-num">02</div>
+            <div class="process-step-name">Procurement Strategy</div>
+            <div class="process-step-desc">Sourcing high-quality goods at scale, negotiating favorable terms, and establishing vendor partnerships.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-node-num">03</div>
+            <div class="process-step-name">Seamless Fulfillment</div>
+            <div class="process-step-desc">Automated restocking schedules, consolidated billing, and dependable timely delivery directly to your office.</div>
+          </div>
+        </div>
+      </section>
+
+      <section style="margin: 48px 0 24px;">
+        <div class="synergy-card" data-vertical="gifting">
+          <div>            <div class="synergy-title">Setting up a new office?</div>
+            <div class="synergy-desc">Cohoro Solutions and Cohoro Gifting can both help you get it client-ready.</div>
+          </div>
+          <div class="synergy-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       7. ABOUT US & PHILOSOPHY VIEW
+       ========================================== -->
+  <main id="aboutView" class="page-view">
+    <div class="container">
+      <section class="service-hero-header hero-about">
+        <div class="service-hero-content">
+          <span class="service-tag">About Cohoro</span>
+          <h1 class="service-headline">One Partner. Five Verticals. Zero Compromise.</h1>
+          <p class="service-subtext">
+            Cohoro was created with a clear objective: to replace the inefficiency of managing dozens of fragmented vendors with a single, AI-powered partner delivering enterprise-grade excellence across talent, learning, events, gifting, and office solutions.
+          </p>
+        </div>
+      </section>
+
+      <!-- Our Story & Philosophy Section -->
+      <section class="about-story-block">
+        <h2 class="about-story-title">Why We Were Built</h2>
+        <div class="about-story-text">
+          <p>
+            Modern enterprises spend thousands of hours managing disparate vendors — coordinating recruitment agencies, corporate trainers, event planners, gifting suppliers, and office procurement vendors. Every handoff introduces friction, misaligned standards, and administrative bloat.
+          </p>
+          <p>
+            Cohoro was founded on a simple philosophy: <strong>Business solutions should be unified, intelligent, and accountable.</strong> By combining Artificial Intelligence with domain-expert leadership across five core business functions, we empower companies to move faster, reduce operational complexity, and maintain a singular high standard across every touchpoint.
+          </p>
+        </div>
+      </section>
+
+      <!-- Core Philosophy Grid (Replaces Leadership Picture Cards) -->
+      <section class="features-section" style="background: transparent; padding: 0;">
+        <div class="section-header">
+          <h2 class="section-title">Our Guiding Philosophy</h2>
+          <p class="section-subtitle">The four foundational pillars that drive how we operate, build, and deliver for our partners.</p>
+        </div>
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <div class="philosophy-icon"><i class="fas fa-brain"></i></div>
+            <h3 class="philosophy-card-title">AI-Powered + Human Expertise</h3>
+            <p class="philosophy-card-desc">We leverage artificial intelligence to automate workflows, accelerate candidate matching, and optimize supply chains — while keeping experienced human leaders in charge of final quality and relationship management.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-icon"><i class="fas fa-shield-alt"></i></div>
+            <h3 class="philosophy-card-title">Single-Point Accountability</h3>
+            <p class="philosophy-card-desc">No passing the buck. Whether you're hiring an executive team or procuring IT infrastructure, Cohoro acts as a single partner with unified SLAs, transparent communication, and dedicated accountability.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-icon"><i class="fas fa-bolt"></i></div>
+            <h3 class="philosophy-card-title">Precision & Speed At Scale</h3>
+            <p class="philosophy-card-desc">Speed without accuracy is waste. Our infrastructure is engineered to deliver rapid turnaround times — from 21-day average hires to turnkey event logistics — without sacrificing quality.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-icon"><i class="fas fa-layer-group"></i></div>
+            <h3 class="philosophy-card-title">Integrated Enterprise Synergy</h3>
+            <p class="philosophy-card-desc">Your talent onboarding feeds into your corporate training, which connects with employee gifting and office setup. All 5 verticals work together seamlessly under one umbrella.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission & Vision Cards -->
+      <section class="mission-vision-grid">
+        <div class="mission-card">
+          <span class="mission-label">OUR MISSION</span>
+          <h3 class="mission-title">Empower Enterprise Growth</h3>
+          <p class="mission-desc">
+            To empower growing businesses and established enterprises with a unified, AI-enhanced service ecosystem that simplifies operations and elevates workforce performance.
+          </p>
+        </div>
+        <div class="mission-card">
+          <span class="mission-label">OUR VISION</span>
+          <h3 class="mission-title">The Global Standard for B2B</h3>
+          <p class="mission-desc">
+            To be the world’s most trusted multi-vertical B2B partner — proving that one dedicated partner can deliver higher quality across multiple verticals than a dozen siloed agencies.
+          </p>
+        </div>
+      </section>
+
+      <!-- Bottom Action CTA Banner -->
+      <section class="dark-cta-banner" style="border-radius: 24px; margin-bottom: 60px;">
+        <div class="container">
+          <h2 class="dark-cta-title">Ready to simplify your business operations?</h2>
+          <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-cta-white">
+            Talk to Us <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==========================================
+       8. CONTACT US VIEW
+       ========================================== -->
+  <main id="contactView" class="page-view">
+    <div class="container">
+      <section class="contact-header-block">
+        <h1 class="contact-header-title">Let's Talk About What You Need.</h1>
+        <p class="contact-header-subtitle">
+          Tell us which vertical you're reaching out about, or talk to us directly on WhatsApp.
+        </p>
+        <div style="margin-top: 16px;">
+          <a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" class="btn-primary-blue">
+            Talk to Us on WhatsApp <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-main-grid">
+        <form class="contact-form" id="contactForm">
+          <div class="form-success-alert" id="formSuccessAlert" style="display: none;">
+            <i class="fas fa-circle-check"></i>
+            <div>
+              <div class="form-success-alert-title">Thank you! Your message has been sent.</div>
+              <div>Our team will review your inquiry and get back to you shortly.</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Name</label>
+              <input type="text" id="contactName" name="name" class="form-input" placeholder="Rahul Sharma" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="companyName">Company Name</label>
+              <input type="text" id="companyName" name="company_name" class="form-input" placeholder="Acme Corp" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="emailAddress">Email Address</label>
+              <input type="email" id="emailAddress" name="email" class="form-input" placeholder="rahul@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phoneNumber">Phone Number</label>
+              <input type="tel" id="phoneNumber" name="phone" class="form-input" placeholder="+91 98765 43210">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="verticalSelect">Which vertical are you interested in?</label>
+            <select id="verticalSelect" name="vertical" class="form-select" required>
+              <option value="" disabled selected>Select an area of interest</option>
+              <option value="Cohoro Talent">Cohoro Talent</option>
+              <option value="Cohoro Learning">Cohoro Learning</option>
+              <option value="Cohoro Events">Cohoro Events</option>
+              <option value="Cohoro Gifting">Cohoro Gifting</option>
+              <option value="Cohoro Solutions">Cohoro Solutions</option>
+              <option value="Multiple Verticals / Group Level">Multiple Verticals / Group Level</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="How can we help you achieve your goals?" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn-primary-blue">
+              Send Message <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+
+        <div class="contact-info-cards">
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="info-card-label">PHONE / WHATSAPP</div>
+              <div class="info-card-value"><a href="https://wa.me/919319529815?text=I%20am%20interested%20in%20the%20Cohoro%20services" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">+91 9319529815</a></div>
+              <div class="info-card-subtext">Quick response on WhatsApp</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="info-card-label">EMAIL</div>
+              <div class="info-card-value"><a href="mailto:corporate@cohoro.in" style="color: inherit; text-decoration: underline;">corporate@cohoro.in</a></div>
+              <div class="info-card-subtext">We aim to reply within 24 hours.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Submission Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i class="fas fa-check-circle" style="color: #4ADE80; font-size: 1.2rem;"></i>
+    <div>
+      <strong>Thank you!</strong> Your message has been sent successfully. We'll be in touch within 24 hours.
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">Cohoro</div>
+          <p class="footer-brand-desc">
+            Elevating corporate standards through integrated consulting and specialized services across talent, learning, events, gifting, and office solutions.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a class="footer-link" data-vertical="talent">Cohoro Talent</a></li>
+            <li><a class="footer-link" data-vertical="learning">Cohoro Learning</a></li>
+            <li><a class="footer-link" data-vertical="events">Cohoro Events</a></li>
+            <li><a class="footer-link" data-vertical="gifting">Cohoro Gifting</a></li>
+            <li><a class="footer-link" data-vertical="solutions">Cohoro Solutions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a class="footer-link nav-link" data-page="about">About</a></li>
+            <li><a class="footer-link nav-link" data-page="contact">Contact</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2024 Cohoro Group. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK Browser Integration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
